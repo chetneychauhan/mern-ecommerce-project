@@ -1,71 +1,284 @@
-<div align="center">
-  <h1>🛒 E-Commerce Pro</h1>
-  <p>A Full-Stack MERN Application with Secure Payment Processing</p>
+# 🛒 MERN E-Commerce Platform
 
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="Express" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-</div>
+A full-stack e-commerce web application built with the **MERN stack**, featuring user authentication, product browsing, search and filtering, shopping cart management, order processing, admin functionality, and payment integration.
 
-<br />
+## 🚀 Live Demo
 
-**Live Demo:** [E-Commerce Pro on Netlify](https://buildsbysaif-ecommerce-pro.netlify.app/)  
+**Frontend:**  
+https://mern-ecommerce-project-steel.vercel.app/
 
-
-## 📖 Project Overview
-
-This repository contains the source code for **E-Commerce Pro**, a complete, responsive e-commerce platform developed as part of an internship at Navodita Infotech. 
-
-Built on the MERN stack, this project goes beyond a simple CRUD application by implementing real-world features such as persistent cart state management, role-based authorization, and secure payment simulation via the Stripe API.
-
-## ✨ Core Features
-
-### For Users (Client-Facing)
-* **Authentication & Security:** Secure registration and login using JWT (JSON Web Tokens) and bcryptjs for password hashing.
-* **Dynamic Catalog:** Search functionality and category filtering to easily browse products.
-* **Interactive Shopping Cart:** Persistent cart state managed by Redux Toolkit and LocalStorage.
-* **Secure Checkout:** Multi-step checkout flow handling shipping details and Stripe payment processing.
-* **User Dashboard:** Logged-in users can manage their profiles, leave product reviews, and track order history.
-
-### For Administrators (Admin Dashboard)
-* **Inventory Management:** Full CRUD capabilities for adding, editing, and deleting products with image upload support.
-* **Order Fulfillment:** Dedicated portal to view customer orders and update delivery statuses.
-* **User Management:** Ability to view the user base and revoke access for non-admin accounts.
-
-## 🏗️ Architecture & Data Flow
-
-The application follows a strict separation of concerns utilizing a **RESTful API** architecture:
-* **Frontend (SPA):** Built with React and Tailwind CSS. Redux Toolkit manages global state (cart, user sessions). All API calls are routed through Axios.
-* **Backend (API):** Node.js and Express handle business logic, routing, and token validation via custom middleware.
-* **Database:** MongoDB stores documents (Users, Products, Orders) utilizing Mongoose as the Object Data Modeling (ODM) library.
-
-
-## 🚀 How to Run Locally
-
-To set up and run this project on a local machine, please follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/buildsbysaif/mern-ecommerce-project.git](https://github.com/buildsbysaif/mern-ecommerce-project.git)
-    ```
-2.  **Set up Environment Variables:**
-    Create a `.env` file in the `backend` folder and another in the `frontend` folder, then add the required API keys and secrets.
-
-3.  **Install Backend Dependencies & Start Server:**
-    ```bash
-    cd backend
-    npm install
-    npm run server
-    ```
-4.  **Install Frontend Dependencies & Start Client:**
-    (In a new terminal)
-    ```bash
-    cd frontend
-    npm install
-    npm run dev
-    ```
+**Backend API:**  
+https://mern-ecommerce-backend-e1j9.onrender.com/
 
 ---
+
+## 📌 Project Overview
+
+This project demonstrates a complete e-commerce application using modern full-stack web development technologies.
+
+The application follows a client-server architecture where the React frontend communicates with a RESTful Node.js/Express backend, while MongoDB is used for persistent data storage.
+
+The project has been configured, customized, deployed, and prepared as a portfolio-level full-stack application.
+
+## ✨ Features
+
+### 👤 User Features
+
+- User registration and login
+- JWT-based authentication
+- Password hashing with bcrypt
+- Browse products
+- Search products
+- Filter products by category
+- View product details
+- Product ratings and reviews
+- Shopping cart
+- Quantity management
+- Shipping information
+- Checkout workflow
+- Order placement
+- Order history
+- User profile management
+
+### 🛠️ Admin Features
+
+- Admin authentication and authorization
+- Product management
+- Create, update, and delete products
+- Product image uploads
+- Order management
+- Update order status
+- User management
+- Admin dashboard functionality
+
+### 💳 Payment
+
+- Stripe payment integration
+- Checkout workflow
+- Order processing
+
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+
+- React.js
+- React Router
+- Redux Toolkit
+- Axios
+- Tailwind CSS
+- React Icons
+- React Toastify
+- Vite
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+- Multer
+- Stripe
+- CORS
+
+### Development Tools
+
+- Git
+- GitHub
+- npm
+- Nodemon
+
+### Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** MongoDB Atlas
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+mern-ecommerce-project/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   ├── seeder.js
+│   ├── package.json
+│   └── .env.example
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── store/
+│   │   ├── data/
+│   │   ├── api.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+🔄 Application Flow
+User
+ │
+ ▼
+React Frontend
+ │
+ │ Axios / REST API
+ ▼
+Node.js + Express
+ │
+ ├── Authentication
+ ├── Products
+ ├── Orders
+ ├── Users
+ └── Payments
+ │
+ ▼
+MongoDB Atlas
+⚙️ Run Locally
+1. Clone the Repository
+git clone https://github.com/chetneychauhan/mern-ecommerce-project.git
+cd mern-ecommerce-project
+2. Setup Backend
+
+Navigate to the backend directory:
+
+cd backend
+
+Install dependencies:
+
+npm install
+
+Create a .env file inside the backend directory:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+Start the backend development server:
+
+npm run server
+
+The backend will run on:
+
+http://localhost:5000
+3. Setup Frontend
+
+Open a new terminal and navigate to the frontend directory:
+
+cd frontend
+
+Install dependencies:
+
+npm install
+
+Create a .env file inside the frontend directory:
+
+VITE_API_URL=http://localhost:5000
+
+Start the frontend development server:
+
+npm run dev
+
+Vite will provide the local frontend URL in the terminal.
+📡 API Routes
+
+The backend provides REST API endpoints for the application's main resources.
+
+Products
+/api/products
+Users
+/api/users
+Orders
+/api/orders
+Uploads
+/api/upload
+
+Some API endpoints are protected and require authentication or admin authorization.
+
+🔒 Security
+
+The application implements several security mechanisms:
+
+JWT-based authentication
+Password hashing using bcrypt
+Protected API routes
+Admin authorization
+Environment variables for sensitive configuration
+CORS configuration
+Authentication middleware
+Server-side request validation
+🌐 Deployment
+
+The application is deployed using the following architecture.
+
+Frontend
+React + Vite
+     │
+     ▼
+  Vercel
+     │
+     ▼
+Live Web Application
+Backend
+Node.js + Express
+        │
+        ▼
+      Render
+        │
+        ▼
+     REST API
+Database
+MongoDB
+   │
+   ▼
+MongoDB Atlas
+Production URLs
+
+Frontend:
+https://mern-ecommerce-project-steel.vercel.app/
+
+Backend:
+https://mern-ecommerce-backend-e1j9.onrender.com/
+
+📈 Future Improvements
+Cloud-based image storage
+Advanced admin analytics
+Product pagination
+Wishlist functionality
+Improved order tracking
+Enhanced responsive design
+Automated testing
+CI/CD pipeline
+Improved production monitoring
+📜 License
+
+This project is distributed under the license included in the repository.
+
+See the LICENSE file for details.
+
+👨‍💻 Developer
+
+Chetney Chauhan
+
+B.Tech — Computer Science Engineering
+
+GitHub:
+https://github.com/chetneychauhan
+
+LinkedIn:
+https://linkedin.com/in/chetney-chauhan-124315373/
