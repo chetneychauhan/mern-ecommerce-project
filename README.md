@@ -483,7 +483,7 @@ Example:
 Chandigarh Group of Colleges, Landran
 
 * 🔗 LinkedIn: https://www.linkedin.com/in/chetney-chauhan-124315373/
-* 💻 GitHub: https://github.com/
+* 💻 GitHub: https://github.com/chetneychauhan
 
 ---
 
