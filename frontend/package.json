@@ -9,14 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "author": "Saif Sultan",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/buildsbysaif/mern-ecommerce-project.git"
-  },
-  "bugs": {
-    "url": "https://github.com/buildsbysaif/mern-ecommerce-project/issues"
-  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@stripe/react-stripe-js": "^3.9.0",

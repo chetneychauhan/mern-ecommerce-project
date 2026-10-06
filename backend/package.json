@@ -12,13 +12,6 @@
   },
   "author": "Saif Sultan",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/buildsbysaif/mern-ecommerce-project.git"
-  },
-  "bugs": {
-    "url": "https://github.com/buildsbysaif/mern-ecommerce-project/issues"
-  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
