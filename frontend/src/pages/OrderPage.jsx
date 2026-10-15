@@ -76,7 +76,12 @@ const OrderPage = () => {
                 {order.orderItems.map((item, index) => (
                   <div key={index} className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
-                      <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded" />
+                      <img
+                        src={`${import.meta.env.VITE_API_URL}${item.image}`}
+                        alt={item.name}
+                        className="w-16 h-16 object-cover rounded"
+                      />
+
                       <Link to={`/product/${item.product}`} className="hover:underline">{item.name}</Link>
                     </div>
                     <div>{item.qty} x Rs {item.price}/- = <b>Rs {(item.qty * item.price).toFixed(2)}/-</b></div>
