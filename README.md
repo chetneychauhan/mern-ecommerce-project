@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🛒 MERN E-Commerce Platform
+# ShopNova — Modern E-Commerce Platform
 
-### A Full-Stack E-Commerce Web Application built with the MERN Stack
+### Discover More. Shop Smarter. | A Full-Stack MERN Application
 
 <p>
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
@@ -26,7 +26,7 @@
 
 ## 📖 Project Overview
 
-**MERN E-Commerce Platform** is a full-stack online shopping application developed using the **MERN stack — MongoDB, Express.js, React.js, and Node.js**.
+**ShopNova** is a full-stack online shopping application developed using the **MERN stack — MongoDB, Express.js, React.js, and Node.js**.
 
 The project demonstrates the development of a complete modern web application with a React-based frontend, RESTful backend APIs, MongoDB database integration, user authentication, product management, shopping cart functionality, and order processing.
 
@@ -200,7 +200,7 @@ The frontend communicates with the deployed backend through REST APIs.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/mern-ecommerce-project.git
+git clone https://github.com/chetneychauhan/mern-ecommerce-project.git
 ```
 
 ```bash
@@ -495,7 +495,7 @@ If you found this project useful or interesting, consider giving the repository 
 
 <div align="center">
 
-### 🛒 MERN E-Commerce Platform
+### ShopNova — Modern E-Commerce Platform
 
 **Built with React • Node.js • Express • MongoDB**
 

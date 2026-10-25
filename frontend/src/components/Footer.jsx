@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8">
             <div>
                 <h3 className="font-bold mb-4">ABOUT US</h3>
-                <p className="text-gray-400">E-Commerce Pro is your one-stop shop for the best products online.</p>
+                <p className="text-gray-400">ShopNova is your one-stop shop for discovering great products online.</p>
                 <div className="flex space-x-4 mt-4">
                     <a href="#" className="hover:text-indigo-400"><FaFacebook size={20}/></a>
                     <a href="#" className="hover:text-indigo-400"><FaTwitter size={20}/></a>

@@ -31,7 +31,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <Link to="/">
-                <img src="/e-logo.png" alt="E-Commerce Pro Logo" className="h-14 w-auto" />
+                <img src="/shopnova-logo.png" alt="ShopNova Logo" className="h-14 w-auto" />
               </Link>
               <div className="ml-4 hidden md:block">
                 <button onClick={() => setIsLocationModalOpen(true)} className="flex items-center text-sm text-gray-500 hover:text-indigo-600">
