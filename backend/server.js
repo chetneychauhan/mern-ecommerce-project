@@ -1,3 +1,4 @@
+import aiRoutes from './routes/aiRoutes.js';
 import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
@@ -8,33 +9,42 @@ import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 
-dotenv.config(); //Loading the environment variables before anything else
-
-connectDB(); // Calling the function to connect to the database
+dotenv.config();
 
 const app = express();
 
-app.use(cors()); //CORS middleware used
+app.use(cors());
 
-
-app.use(express.json()); //Express's built-in JSON parser is used for request bodies
-
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
-//API routes mount
+// API routes
+app.use('/api/ai', aiRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 
-// Make the 'uploads' folder static
+// Serve uploaded images
 const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const PORT = process.env.PORT || 5000;
 
+const startServer = async () => {
+  try {
+    await connectDB();
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Failed to start server:', error.message);
+    process.exit(1);
+  }
+};
+
+startServer();
