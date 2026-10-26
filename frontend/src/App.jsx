@@ -1,3 +1,4 @@
+import AIShoppingAssistant from './components/AIShoppingAssistant';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -21,6 +22,7 @@ const App = () => {
       </main>
       <Footer />
       <ToastContainer />
+      <AIShoppingAssistant />
     </div>
   );
 };
