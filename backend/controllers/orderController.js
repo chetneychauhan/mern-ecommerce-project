@@ -28,7 +28,7 @@ const addOrderItems = async (req, res) => {
       shippingAddress,
       paymentMethod,
       itemsPrice,
-      taxPrice,
+      taxPrice: 0,
       shippingPrice,
       totalPrice,
     });
